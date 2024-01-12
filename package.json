@@ -49,6 +49,7 @@
     "codelyzer": "~4.2.1",
     "concurrently": "^8.0.1",
     "cypress": "^12.10.0",
+    "cypress-mochawesome-reporter": "^3.8.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~1.7.1",
