@@ -1,0 +1,26 @@
+[
+  {
+    "userName": "brenosc3",
+    "password": "pswdteste123",
+    "email": "brenosc3@hotmail.com",
+    "fullName": "Breno Henrique 3"
+  },
+  {
+    "userName": "brenosc4",
+    "password": "pswdteste123",
+    "email": "brenosc4@hotmail.com",
+    "fullName": "Breno Henrique 4"
+  },
+  {
+    "userName": "brenosc5",
+    "password": "pswdteste123",
+    "email": "brenosc5@hotmail.com",
+    "fullName": "Breno Henrique 5"
+  },
+  {
+    "userName": "brenosc6",
+    "password": "pswdteste123",
+    "email": "brenosc6@hotmail.com",
+    "fullName": "Breno Henrique 6"
+  }
+]

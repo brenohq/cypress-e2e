@@ -1,13 +1,20 @@
 describe('Sign up flow', () => {
-  it('Fill form fields to register a new user', () => {
+  const users = require('../fixtures/users.json');
+
+  beforeEach(() => {
     cy.visit('http://localhost:4200');
-    cy.contains('a', 'Register now').click();
+  });
 
-    cy.get('[data-test="email"]').type(Cypress.env().email);
-    cy.get('[data-test="fullName"]').type(Cypress.env().fullName);
-    cy.get('[data-test="registerUserName"]').type(Cypress.env().userName);
-    cy.get('[data-test="registerPassword"]').type(Cypress.env().password);
+  users.forEach(user => {
+    it('Fill form fields to register a new user', () => {
+      cy.contains('a', 'Register now').click();
 
-    cy.contains('button', 'Register').click();
+      cy.get('[data-test="email"]').type(user.email);
+      cy.get('[data-test="fullName"]').type(user.fullName);
+      cy.get('[data-test="registerUserName"]').type(user.userName);
+      cy.get('[data-test="registerPassword"]').type(user.password);
+
+      cy.contains('button', 'Register').click();
+    });
   });
 })
