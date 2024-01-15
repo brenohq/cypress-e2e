@@ -3,10 +3,10 @@ describe('Sign up flow', () => {
     cy.visit('http://localhost:4200');
     cy.contains('a', 'Register now').click();
 
-    cy.get('[data-test="email"]').type('brenosc2@email.com');
-    cy.get('[data-test="fullName"]').type('Breno Henrique');
-    cy.get('[data-test="registerUserName"]').type('brenosc2');
-    cy.get('[data-test="registerPassword"]').type('pswdteste123');
+    cy.get('[data-test="email"]').type(Cypress.env().email);
+    cy.get('[data-test="fullName"]').type(Cypress.env().fullName);
+    cy.get('[data-test="registerUserName"]').type(Cypress.env().userName);
+    cy.get('[data-test="registerPassword"]').type(Cypress.env().password);
 
     cy.contains('button', 'Register').click();
   });
