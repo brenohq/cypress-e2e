@@ -42,3 +42,4 @@ data.db
 
 cypress/reports
 cypress/videos
+cypress.env.json
